@@ -67,3 +67,32 @@ function playRound(playerChoice) {
     }
 }
 
+/**
+ * Initialize the game after the play button is clicked
+ * 
+ * reset the game values
+ * enable any disabled buttons
+ * clear out previous game text content
+ */
+document.getElementById("play").addEventListener("click", () => {
+    score = 0;
+    triesLeft = 3;
+    document.querySelectorAll("button[data-choice]").forEach(btn => btn.disabled = false);
+    document.getElementById("score").textContent = score;
+    document.getElementById("tries-counter").textContent = triesLeft;
+    document.getElementById("result").textContent = "";
+});
+
+/**
+ * Event listener for button clicks on game
+ * 
+ * sends player choice to the playRound function
+ */
+document.querySelectorAll("button[data-choice]").forEach(btn => {
+    btn.addEventListener("click", () => {
+        // Get what the player has chosen
+        const playersChoice = btn.getAttribute("data-choice");
+    
+        playRound(playersChoice);
+    });
+});
