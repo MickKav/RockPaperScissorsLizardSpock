@@ -53,7 +53,7 @@ button {
     font-weight: bold;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 2560px) {
     .game-container {
         display: flex;
         flex-direction: row;
@@ -73,10 +73,21 @@ button {
 
     button {
         font-size: 1.5rem;
+        font-weight: bold;
         background-color: #eee;
         border: none;
         cursor: pointer;
         margin: 1rem 0.3rem;
+        height: 6.5rem;
+        width: 6.5rem;
+        border: 1px solid #000;
+        border-radius: 50%;
+        transition: color .4s, background-color .4s ease;
+    }
+
+    button:hover {
+        color: #fff;
+        background-color: #000;
     }
 }
 
@@ -87,13 +98,9 @@ button {
 
     .game-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         margin: 1rem;
-    }
-
-    .scissors {
-        display: none;
     }
 
     button {
@@ -121,14 +128,13 @@ button {
         height: 5rem;
     }
 
-    .scissors {
-        display: none;
-    }
-
     .game-container {
         display: flex;
+        flex-direction: row;
         align-items: center;
         margin: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     button {
@@ -140,5 +146,15 @@ button {
         width: 4.5rem;
         border: 1px solid #000;
         border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 342px) {
+    #title-hide {
+        display: none;
+    }
+
+    nav {
+        height: 12rem;
     }
 }
