@@ -25,17 +25,17 @@ main {
 }
 
 .game-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
+    display: flex;
+    margin: 2rem;
 }
 
 button {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     padding: 0.5rem 1rem;
     background-color: #eee;
     border: none;
     cursor: pointer;
+    margin: 0.5rem;
 }
 
 .result-container {
@@ -51,7 +51,9 @@ button {
 
 @media screen and (min-width: 768px) {
     .game-container {
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        flex-direction: row;
+        margin: 3rem;
     }
 
     main {
@@ -66,10 +68,27 @@ button {
     }
 
     button {
-        font-size: 1rem;
-        padding: 0.5rem rem;
+        font-size: 1.5rem;
         background-color: #eee;
         border: none;
         cursor: pointer;
+        margin: 1rem 0.3rem;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    main {
+        margin: 0.5rem;
+    }
+
+    .game-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    .result-container {
+        font-size: 1.5rem;
     }
 }
