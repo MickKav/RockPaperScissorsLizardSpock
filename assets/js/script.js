@@ -23,6 +23,14 @@ function computerChoice() {
      return computersChoice;
 }
 
+/**
+ * Play a round of Galactic Bash
+ * 
+ * start by getting computers choice
+ * compare the player's choice with computers choice
+ * return the correct result and update the score
+ * 
+ */
 function playRound(playerChoice) {
     const computer = computerChoice();
     let result = "";
@@ -39,8 +47,23 @@ function playRound(playerChoice) {
         score++;
         result = `You win! ${playerChoice} beats ${computer}.`;
     } else {
+        // if the user loses then decrement the tries left for them
         triesLeft--;
         result = `You lose! ${computer} beats ${playerChoice}.`;
+    }
+
+    // update the values of game info for the user
+    document.getElementById("result").textContent = result;
+    document.getElementById("score").textContent = score;
+    document.getElementById("tries-counter").textContent = triesLeft;
+
+    // if triesLeft = 0 notify user that game is over
+    if (triesLeft === 0) {
+        // 
+        document.getElementById("result").textContent = "Game over!";
+
+        // disable the button so the user can't play anymore
+        document.querySelectorAll("button[data-choice]").forEach(btn => btn.disabled = true);
     }
 }
 
