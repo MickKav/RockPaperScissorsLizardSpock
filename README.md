@@ -3,7 +3,7 @@
 A very basic rock paper scissors game that is interactive 
 Visit [live website here]("https://mickkav.github.io/RockPaperScissorsLizardSpock/")
 
-<img src="am-i-responive-rspls.png" width = "500">
+<img src="/assets/images/am-i-responive-rpsls.png" alt="image of game page on multiple devices" width="500">
 
 ## About This Project
 This project was intended to provide a Rock, paper, scissors style game that's scalable and has interactivity and functionality.
@@ -17,7 +17,7 @@ This project was structured and styled with HTML5 & CSS3 & JavaScript.
 - Game Area
     - Where the computer score and the result of your choice is stored.
 
-    <img src="rpsls-game-page-screen.png" alt="screenshot of the game page" width = "500">
+    <img src="/assets/images/rpsls-game-page-screen.png" alt="screenshot of the game page" width = "500">
 
 - The Button Area
     - Where the five choices, rock, paper, scissors, lizard and spock reside. 
@@ -64,4 +64,4 @@ This project was structured and styled with HTML5 & CSS3 & JavaScript.
 ## Sketch up
 - Figma was used to do a mock-up of lay out of site.
 
-<img src="figma-rpsls.png" alt="sketch up of the site in its early days" width = "500">
+<img src="/assets/images/figma-rpsls.png" alt="sketch up of the site in its early days" width = "500">
