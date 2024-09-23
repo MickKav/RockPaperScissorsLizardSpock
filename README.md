@@ -1,7 +1,7 @@
 # Rock, paper, scissors, lizard & spock: Project 2
 
 A very basic rock paper scissors game that is interactive 
-Visit [live website here]("https://mickkav.github.io/RockPaperScissorsLizardSpock/")
+Visit [live website here]("https://rplsp.netlify.app/")
 
 <img src="/assets/images/am-i-responive-rpsls.png" alt="image of game page on multiple devices" width="500">
 
